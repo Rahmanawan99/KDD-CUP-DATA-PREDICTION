@@ -9,7 +9,7 @@ import missingno as mano
 
 #file_path = 'kddcup 4.data_10_percent.gz'
 #file_path = 'alldata.mat'
-file_path = '.csv'
+file_path = 'all_data.csv'
 df = pd.read_csv(file_path)
 #df_cleaned = df.drop_duplicates()
 
@@ -25,12 +25,12 @@ flag_count = df['flagsymbolic'].value_counts().nunique()
 
 # print("Duplicates removed and data saved.")
 
-#print (df_cleaned.shape)
-#print (df.dtypes)
-#print (df_cleaned.columns)
-#print (df_cleaned.head)
+print (df_cleaned.shape)
+print (df.dtypes)
+print (df_cleaned.columns)
+print (df_cleaned.head)
 print (attack_distribution)
-#print (symbol_distribution)
-#print (protocol_distribution)
-#print (flag_distribution)
-#print (flag_count)
+print (symbol_distribution)
+print (protocol_distribution)
+print (flag_distribution)
+print (flag_count)
